@@ -13,7 +13,8 @@ body {
     color: var(--text-color-dark);
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -140,12 +141,15 @@ nav a.active {
 
 .grid-container > article {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
-    text-align: center;
     padding: 1.5em;
     background-color: var(--white);
     transition: 0.5s;
     animation: fadeIn 0.5s;
     cursor: pointer;
+}
+
+.grid-container > article ::first-letter {
+    text-transform: uppercase;
 }
 
 .grid-container > article:hover {
